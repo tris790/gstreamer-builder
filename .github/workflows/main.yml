@@ -4,17 +4,17 @@ on:
     branches: [ main ]
   workflow_dispatch:
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
+  build-deploy:
+    runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
-      - name: Npm install
-        run: npm install
-      - name: Build
-        run: npm run build
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          cname: hex.tris790.com
+    - uses: actions/checkout@v2
+    - name: Npm install
+      run: npm install
+    - name: Npm build
+      run: npm run build:gh
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      env:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
+        cname: gstreamer.tris790.com
