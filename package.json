@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "preact build",
-    "build:gh": "GITHUB_PAGES=gstreamer-builder preact build",
+    "build:gh": "GITHUB_PAGES=gstreamer-builder preact build && dot-json ./build/manifest.json start_url \"/gstreamer-builder/\"",
     "serve": "sirv build --port 8080 --cors --single",
     "dev": "preact watch",
     "lint": "eslint src",
