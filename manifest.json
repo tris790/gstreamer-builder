@@ -1,7 +1,7 @@
 {
   "name": "gstreamer-builder",
   "short_name": "gstreamer-builder",
-  "start_url": "/gstreamer-builder/",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
