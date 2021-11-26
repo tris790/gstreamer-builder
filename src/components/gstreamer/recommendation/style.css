@@ -1,0 +1,18 @@
+.Recommendation {
+    position: absolute;
+    width: 300px;
+    background-color: #464750;
+    color:white;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.RecommendationElement {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.RecommendationElement[selected] {
+    background-color: #673AB7;
+}

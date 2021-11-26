@@ -1,0 +1,16 @@
+.Pipeline {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    list-style: none;
+    width: fit-content;
+    padding: 5px;
+    gap: 5px 10px;
+    cursor: default;
+}
+
+.Pipeline li {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}

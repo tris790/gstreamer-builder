@@ -1,0 +1,13 @@
+.PipelineElement{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+    background-color: #1f2028;
+    border: solid 2px #673AB7;
+    border-radius: 5px;
+    padding: 5px;
+    cursor:text;
+    color:white;
+}

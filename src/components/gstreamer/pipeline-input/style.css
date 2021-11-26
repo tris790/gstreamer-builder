@@ -1,0 +1,15 @@
+.PipelineInputContainer {
+    width: inherit;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.PipelineInput {
+    flex: 1;
+    background-color: #1f2028;
+    color: white;
+    border: solid 2px white;
+    border-radius: 10px;
+    height: 2em;
+    padding:20px;
+}
