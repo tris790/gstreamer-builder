@@ -1,18 +1,18 @@
 import { h } from 'preact';
 import { useState, useCallback, useEffect } from 'preact/hooks';
 import style from './style.css';
+import plugins from './plugins';
 
 const Recommendation = (props) => {
     const useRecommendation = props.useRecommendation;
-    const useClose = props.useClose;
     const isClosed = props.isClosed;
     const userInput = props.userInput;
 
     const [selectedIndex, setSelectedIndex] = useState(0);
     if (selectedIndex === null) return;
 
-    const recommendations = ["dxgiscreencapsrc", "ximagesrc", "videotestsrc", "directsoundsrc", "nvh264enc", "nvh264dec", "decodebin", "udpsink", "autovideosink", "autoaudiosink"];
-    const maxElementVisible = 3;
+    const recommendations = plugins;
+    const maxElementVisible = 5;
     let startIndex = 0;
 
     if (selectedIndex >= maxElementVisible) {
