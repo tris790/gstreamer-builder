@@ -31,10 +31,22 @@ const Recommendation = (props) => {
         if (keyPressed === "Enter") { useRecommendation(filteredRecommentations[pagedSelected]); }
     }, [setSelectedIndex, useRecommendation, selectedIndex]);
 
+    const scrollHandler = useCallback((e) => {
+        if(e.deltaY > 0){
+            setSelectedIndex(selectedIndex + 1);
+        } else {
+            setSelectedIndex(selectedIndex - 1);
+        }
+    }, [setSelectedIndex, selectedIndex]);
+
     useEffect(() => {
         window.addEventListener("keydown", keyPressedHandler);
-        return () => { window.removeEventListener("keydown", keyPressedHandler); }
-    }, [keyPressedHandler]);
+        window.addEventListener("wheel", scrollHandler);
+        return () => { 
+            window.removeEventListener("keydown", keyPressedHandler);
+            window.removeEventListener("wheel", scrollHandler);
+        }
+    }, [keyPressedHandler, scrollHandler]);
 
 
     return (

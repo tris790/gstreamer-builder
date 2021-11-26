@@ -28,7 +28,7 @@ const Gstreamer = () => {
     const lastWordTyped = lastWordTypedRegex && lastWordTypedRegex.length ? lastWordTypedRegex[0] : null;
     return (
         <div class={style.Gstreamer}  >
-            <div>RAW: {pipelinesString}</div>
+            <div>Exemple: {pipelinesString}</div>
             <br />
             <PipelineInput
                 onInput={(e) => setPipelineCmd(e.target.value)}
