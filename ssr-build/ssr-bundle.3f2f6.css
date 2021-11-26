@@ -149,13 +149,14 @@ html, body {
     background-color: #673AB7;
 }
 .Gstreamer__cJKvY {
-    background-color: #1f2028;
-    padding: 5px;
+  background-color: #1f2028;
+  padding: 5px;
 }
 
 .Spacing__Lo4KI {
-    margin-top: 120px;
+  margin-top: 160px;
 }
+
 .home__uRcqa {
 	padding: 56px 20px;
 	min-height: 100%;
@@ -169,4 +170,4 @@ html, body {
 	margin-bottom: 80px;
 }
 
-/*# sourceMappingURL=ssr-bundle.fe2be.css.map*/
+/*# sourceMappingURL=ssr-bundle.3f2f6.css.map*/
